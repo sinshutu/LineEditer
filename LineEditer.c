@@ -4,17 +4,18 @@ int main(int argc, char const *argv[])
 {
 	FILE *fp;
 	char str[256];
-	char tmp[] = "test"; 
-	fp = fopen("./pack/test.dat","w");
+	printf("%s\n", argv[1]);
 
-	if(fp==NULL){
-		printf("%s\n" );
-		printf("disable\n");
+	fp = fopen(argv[1], "w");
+	fputs(argv[1], fp);
+	if(fp==NULL){//ファイルが開けなければ強制終了
+		printf("file can't open\n");
 		return -1;
 	}
-	str = "LineEditer.exe,LineEditer.exe,LineEditer.exe"
 	
-	fclose(fp);
+	// printf("%s\n", fgets(fp));
 
+	fclose(fp);
+	
 	return 0;
 }
