@@ -1,2 +1,2 @@
-LineEditer.exe : main.c
-	gcc -o LineEditer.c main.c
+LineEditer.exe : LineEditer.c
+	gcc -o LineEditer.exe LineEditer.c
