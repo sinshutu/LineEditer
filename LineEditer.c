@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
 
 	fgets(LineEdite, sizeof(LineEdite), stdin);//fgets(文字配列,sizeof(文字配列),stdin(ファイルポインタ)); ＊stdinはキーボードのファイルポインタ
 	
-	fputs(LineEdite, fp);//fgets(文字配列,ファイルポインタ);
+	fputs(LineEdite, fp);//fputs(文字配列,ファイルポインタ);
 	fclose(fp);
 	
 	return 0;
