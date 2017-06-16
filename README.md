@@ -16,4 +16,6 @@ char* strcat( char *s1, const char *s2 )
 で、s1に対して追加されるような形になる
 
 
-
+2017/06/16
+仕様をedエディタに合わせてみる
+[The GNU ed line editor](https://www.gnu.org/software/ed/manual/ed_manual.html)
